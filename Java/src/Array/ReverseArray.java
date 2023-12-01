@@ -1,6 +1,5 @@
 package Array;
 
-import java.util.Iterator;
 
 public class ReverseArray {
 	public static void main(String[] args) {
