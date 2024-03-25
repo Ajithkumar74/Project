@@ -1,0 +1,8 @@
+Java Array:
+
+Array is a collection od similar type of elements which has contiguous memory location.
+
+Java is an object which contains elements of a similar data type .The elements of an array stored in contiguous memory location.
+It is a datastructure where we store similar elements. We can store only fixed set of elements in a Java Array.
+
+Array in Java is index-based, the first elements of the array is stored at the oth index, 2nd element is stored on 1st index.

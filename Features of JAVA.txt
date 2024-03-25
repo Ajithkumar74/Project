@@ -1,0 +1,86 @@
+Features of JAVA:
+Java is Programming language and platform.
+Java is platform independent language.
+Java is a write once, run anyware kind of programming language.
+Java is portable.
+Java is secure in nature.
+Java supports object oriented programming or OOPs features.
+Java is robust.
+Java supports multithreading.
+Features of java
+Java features can be noted down as:
+
+Simple,
+OOP,
+Secure,
+Portable,
+Platform independent,
+Multithreaded,
+Robust. 
+
+1.Java is Simple:
+Java is simple to learn as a programming language.
+This is because creators of this languuage didn't include in it concepts like(explicit) pointer,operator overloading,structure,goto,etc which were confusing in nature or were used at very rare occasions.
+
+Its syntax is mostly common to C++. If you already know C or C++ then learning java would be much much easier for you. And even if you start directly your programming journey with java you will not find it much complicated.
+
+2.Java is Object oriented programming:
+Java supports object oriented programming feature.
+Java supports OOP features like:
+Class & object
+abstraction
+encapsulation
+inheritance
+polymorphism
+
+3. Java is Portable and Platform independent feature
+Java feature as platform independent and portable programming language is well known and its because of JVM  and bytecode.
+
+When a java program is compiled the .class file is generated that consists of bytecode.This bytecode can be execute on the same system(Say windows) or can be ported to any other ystem (say unix). The only requirement is that the system on which the bytecode is executed  should hava JVM installed on its as JVM can read and verify the byte code.
+
+Thus bytecode and JVM works together to add portable as well as platform independent feature of java.
+4. Java is Secure
+Java creators didn’t include concepts like pointer thus eliminating significant security risks.
+
+Automatic memory management provides security feature against memory leaks or out of memory problem.
+
+Exception handling mechanisms helps resolve any exceptional condition arising in the code.
+
+This all makes java a secure programming language.
+5.Java is Robust
+Java is robust which means strong.
+Java is strongly typed language which helps to check compile time error,It doesn't support pointer thus avoiding security risks.
+uses of Exception handling mechanism,automatic memory management, packages makes java very strong as programminglanaguage
+
+6.Java is Multi-threaded.
+Java is multi-threaded programming language.It supports creation of multiple threads and execute concurrently.
+
+1.Internal working during compile time:
+When you compile the Hello.java file then the compiler creates a .class file
+.class file is created with the name Hello.class
+Hello.class contains byte codes
+java compilation internal working
+
+ 
+
+Byte code (.class file) is specialized set of instruction that JVM can read.
+
+Thus this .class file consisting of byte code can be transported to other system, irrespective of the operating system it has, and could be executed comfortably without any issue.
+
+This is what makes java a portable language. Because of the same reason java is also popularly known as Write once, run anywhere (WORA) language.
+
+JVM is capable of reading, verifying the bytecode.
+
+Any computer system on which JVM is installed will be capable of executing the compiled .class file (consisting of bytecode).
+
+2.Internal working during run time:
+During run or execution time following tasks are performed within JVM:
+
+Class loader loads the .clas files containing bytecode to the memory.
+
+Next the bytecode is verified and checked for any errord or bugs which may result in program exhibiting anamolous behaviour.
+
+At last just-in-time complier  converts the bytecode into machine code.
+
+
+

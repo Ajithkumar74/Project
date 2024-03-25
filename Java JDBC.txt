@@ -1,0 +1,30 @@
+Java JDBC:
+	Java stands for Java database connectivity.JDBC is a Java API to connect and execute query with database. 
+
+It is a part of JAVASE(JAVA STANDARD EDITION). JDBC API USES JDBC Drivers to connect with database.
+
+There are four types of JDBC drivers:
+1.JDBC-ODBC Bridge driver
+2.Native Driver.
+3.Network Protocol Driver, and
+4.Thin Driver.
+
+We can use JDBC API to access tabular data stored in any relational database. By the help of JDBC API, we can save, update, delete and fetch data from the database. It is like Open Database Connectivity (ODBC) provided by Microsoft.
+
+JDBC DRIVER:
+JDBC Driver is a software component that enables java application to interact with the database. There are 4 types of JDBC drivers:
+
+JDBC-ODBC bridge driver
+Native-API driver (partially java driver)
+Network Protocol driver (fully java driver)
+Thin driver (fully java driver)
+
+SQL Connection:
+step 1:load the driver class
+step 2: create  the connection object 
+step 3: create the statement object  
+step 4: execute query  
+Step 5: Read Output from resultset
+Step 6: Close Connection
+
+

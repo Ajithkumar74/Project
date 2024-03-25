@@ -1,0 +1,13 @@
+throw keyword 						throws keyword
+The throw keyword is used to throw an 	throws keyword is used to declare an exception.
+exception explicitly.	
+
+The checked exception cannot be 	The Checked Exception can be propagated with throws.
+propagated with throw only.
+
+The throw keyword is followed by, 	he throws keyword is followed by class.
+instance.	
+
+the throw keyword is used within method. the throws keyword is used with the method 						  signature.
+
+you cannot throw multiple exceptions.	you TestSynchronization1can declare multiple exceptions.

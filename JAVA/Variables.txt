@@ -1,0 +1,113 @@
+Variables:
+
+What is variables:
+state of objects are stored in variables.
+
+Variables are class members and is defines within in class.
+
+Variables in java can be thought of as a container that can hold certain values like int,float,byte, etc/ during the life time of an application program.
+
+Primitive variables:
+variables in java like byte,short,int,char,float,boolean,long,double are known as primitive data types variable.
+
+once declared  varibale of particular type (say int) then throughout the program  the type of primitive variable can never be changed.you can only change the value assigned to the int data type primitive variable.
+
+Identifier:A Name in java program is called identifier.It may be class name,method name,variable name and label name.
+
+Datatypes 
+Every variable has a type,Every expression has a type and all types are strictly define more over every assignment should be checked by the compiler by the type compatibility hence
+java language is considered as strongly typed language.
+
+A java variable with primitive data types can be of 8 different types:
+ primitive data types:
+Numberic data types:(to represent numbers)
+Integral data  types:(to repesent whole numbers)
+byte,
+short,
+int,
+long.
+
+floating point data types:(to represent real numbers)
+float,
+double.
+
+char datatypes:(to represent characters)
+
+char
+
+Boolean data types:(to represent logical values)
+boolean
+
+Except Boolean and char all remaining data types are considered as signed data types because we can represent both "+ve" and "-ve" numbers.
+
+byte:
+Size: 1 byte (8 bits)
+MaxValue:+127
+MinValue:-128
+Range -128 to 127
+byte data type is best suitable if we are handling data in terms of streams either from the file or from the network.
+
+Short:
+Size: 2 bytes (16 bits)
+MaxValue:32767
+MinValue:-32768
+Range :-32768 to 32767
+
+Short data type is best suitable for 16 bit processors like 8086 but these are completely outdated and hence the corresponding short data type is also out data type.
+
+Int:
+this is most commonly used data type in java.
+Size:4 bytes
+Range:-2147483648 to 2147483648
+
+long: Whenever int is not enough to hold big values then we should go for long data type.
+
+Example:
+To hold the no.of characters present in a big file int may not enough hence the return type of length() method is long.
+
+size:8 bytes 	long l=f.length();//f is a file
+
+range:-2(power)63 to 2(power)63-1
+
+Note: All the data types (byte ,short, int, long ) can be used to represent whole numbers.If We want to represent real numbers then we should go for floating point data
+types.
+
+Floating point data types:
+Float:
+
+If we want to 5 to 6 decimal places of accuracy then we should go for float.
+size:4 bytes
+Range:-3.4e38 to 3.4e38.
+float follows single precision.
+
+double:
+If we want to 14 to 15 decimal places of accuracy then we should go for double.
+size:8 bytes.
+-1.7e308 to 1.7e308.
+double follows double precision.
+
+boolean data types;
+size: Not applicable(virtual machine dependent)
+Range:Not applicable but allowed values are true or false.
+
+
+char dataa types :
+in java we are not allowed to use any worldwide alphabets character and java is unicode based on represent all these characters one byte is not enough compulsary we should go for 2 bytes.
+
+Size:2 bytes 
+range:0 to 65535
+
+The default value for the object references is "null".
+Literals:-
+Any constant value which can be assigned to the variable is called literal.
+
+int x=10;
+int is datatype | keyword
+x is name of the variable | identifier
+10 is constant value | literal
+
+String literals:
+Any sequence of characters with in double quotes is treated as String literal.
+
+String s="Bhaskar";(valid)
+

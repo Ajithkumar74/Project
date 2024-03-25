@@ -1,0 +1,11 @@
+Queue Interface:
+
+Queue Interface maintains the first-in-first-out order.
+It can be defined as an ordered list that is used to hold the elements which to be processed.
+There are various classes like PriorityQueue, Deque, and ArrayDeque which implements the Queue interface.
+
+
+Priority Queue:
+The PriorityQueue class implements the Queue interface.
+It holds the elements or objects which are to be processed by their priorities. 
+PriorityQueue doesn't allow null values to be stored in the queue.

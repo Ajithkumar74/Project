@@ -1,0 +1,20 @@
+Java:
+What is java?
+Java is one of the most widely used programming language and platform. This is the simplest java definition.
+
+ What is JAva?
+Java is the high-level ,object oriented, robust,secure programming language,platform independent,high performance,Multithreaded, and portable programming language.It was developed by james gosling in june 1991. It can also be known as platform as it provides it's own JRE and API.
+
+Where java is used?
+Java can be used to build:
+standalone programs (As a beginner we will start from here by writing java programs).
+Web applications.
+enterprise applications.
+desktop applications(java swing).
+embedded systems applications.
+games.
+
+However to develop all of these except standalone program you will have to learn other java technologies like jsp, servlet, spring or ejb, swing, applet, etc.
+
+
+

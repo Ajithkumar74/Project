@@ -1,0 +1,12 @@
+Exception Handling?
+Exception Handling is a mechanism that is used to handle runtime errors.It is used primarily to checked exception. Exception handling maintains the normal flow of program. There are mainly two types of exceptions:checked and unchecked.Here, the error is connsidered as the unchecked exception.
+
+types of Exception:
+two types of Expection checked and unchcked Exception.
+
+Checked Exception:The Classes that directly inherit trowable class except runtimeException and Error are known as checked Exceptions. For example, IoException, SQLException, etc. Checked exceptions are checked at compile-time.
+
+Unchecked Exception:The Classes that inherit the RuntimeException are known as unchecked exception.For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+
+3) Error
+Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.

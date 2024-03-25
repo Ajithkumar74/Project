@@ -1,0 +1,46 @@
+List Interface:
+List interafce is the child interface of collection interface. It inhibits a list type data structure in which we can store the ordered collection of objects. It can have duplicate vaules.
+
+
+List Interface is implemented by the classes ArrayList,LinkedList, Vector,stack.
+
+ArrayList:
+The ArrayList class implements the List Interface.It uses dynamic array to store the duplicate element of different data types.
+
+Java ArrayList class can contain duplicate elements.
+
+The arrayList maintains insertion order and non-synchronized.
+
+The elements stored in the ArrayList class can be randomly accessed.
+
+Difference Between Array and Arraylist
+
+Array:
+1.An array is a dynamically created object.
+2.Array is static in size.
+3.An array length is fixed.
+4.An Array can store both objects and primitives type.
+
+ArrayList:
+1.ArrayList is a class of Collections framework.
+2.ArrayList is dynamic in size.
+3.ArrayList is a variable-length
+4.ArrayList cannot store primitive type in ArrayList.It automatically converts primitive type to object.
+
+LinkedList:
+LinkedList implements the Collection interface.
+It uses a doubly linked list internally to store the elements.
+Java linkedlist class can contain duplicate elements.
+It maintains the insertion order and is not synchronized. In LinkedList, the manipulation is fast because no shifting is required.
+Java LinkedList class can be used as a list, stack or queue.
+
+Vector:
+Vector uses a dynamic array to store the data elements It is similar to ArrayList.
+
+It is synchronized and contains many methods that are not the part of collection framework.
+
+Stack
+The stack is the subclass of Vector. It implements the last-in-first-out data structure, i.e., Stack. The stack contains all of the methods of Vector class and also provides its methods like boolean push(), boolean peek(), boolean push(object o), which defines its properties.
+
+
+

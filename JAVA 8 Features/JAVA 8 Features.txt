@@ -1,0 +1,9 @@
+JAVA 8 Features:
+Lambda Expression and Function Interfaces 
+Default and static methods 
+functions and predicates
+Collection API
+stream API
+Java Time API
+forEach() method
+Concurrency API

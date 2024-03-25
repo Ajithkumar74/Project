@@ -1,0 +1,8 @@
+Byte:
+jshell> Byte.SIZE $1 ==> 8 bits
+
+jshell> Byte.BYTES $2 ==> 1 bytes
+
+jshell> Byte.MAX_VALUE $3 ==> 127 
+
+jshell> Byte.MIN_VALUE $4 ==> -128

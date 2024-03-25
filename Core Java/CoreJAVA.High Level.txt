@@ -1,0 +1,37 @@
+
+What is High level language?
+High level languages are programming languages which are used for writing programs or software which could be understood by the humans and computer.
+
+High level languages are easier to understand for humans because it uses lot of symbols letters phrases to represent logic and instructions in a program.
+
+It contains high level of abstraction compares to low level languages.
+
+Execution of High level languages:
+There are three ways in which high level languages can be executed.
+Interpreted,Compiled Languages,Transcompile
+
+Interpreted
+In this there is a program called interpreter, its task is to read the code written in high level language understand the program flow and execute it. It just executes it or perform instruction in it without compiling. This happens in case of interpreted languages such as Python, Ruby, and JavaScript
+
+Compiled Languages
+This a little different from interpreted languages, in this first the code is transformed into a executable code, in machine language . Two ways of compilation are there first is by machine code generation other is by Intermediate representation.
+
+Machine code generation- In this the code is compiled by compilers into machine code then they are executed.
+In intermediate representation the code is first, compiled to intermediate representation which is saved so that there is no need to read source file again. When its saved it forms a byte code which can be executed by the machine.
+some compiled languages are C, C++, Java
+
+Transcompile Languages
+This is also known as Source-to-source translation Because in this the source code of one language is converted into source code of another programming language. This is done so that code can be used for multiple platforms. Some transcompile languages are TypeScript, Coffee Script etc.
+
+Advantages of High Level Languages
+
+The biggest advantage of using high level languages is that they are easy to understand, remember, learn, writing codes, to debug.
+There are different libraries available which can be used for development, many defined operators, data types and frameworks also which reduce the amount we need to write.
+They are portable to use, means we can use there code for different platforms without much modification.
+It provides a higher level of abstraction, means it hides the complexities of hardware from the programmer. You don’t need to know about hardware before writing program.
+
+Disadvantages of High level Languages
+
+High Level languages are slower as compared to low level languages because there is more level of abstraction with hardware so they require more processing and more memory for execution
+High level languages have less control over hardware, because the complexities of hardware for the programmer in high level languages.
+For the maximum utilization of hardware or CPU in terms of performance low level languages are best.
