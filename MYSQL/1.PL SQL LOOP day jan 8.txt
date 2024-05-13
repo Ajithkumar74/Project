@@ -1,0 +1,136 @@
+1>. delimiter $$
+create procedure getEmployee()
+     begin
+    select * from employees;
+    end$$
+ delimiter ;
+2>.mysql> delimiter $$
+mysql> create procedure getTotalSalary()
+    -> begin
+    -> declare totalsalary decimal(8,2);
+    -> select count(*) into totalsalary from employees; select totalsalary;
+    -> select totalsalary;
+    -> end$$
+Query OK, 0 rows affected (0.20 sec)
+
+mysql> delimiter ;
+mysql> call getTotalSalary();
++-------------+
+| totalsalary |
++-------------+
+|      107.00 |
++-------------+
+1 row in set (0.08 sec)
+
++-------------+
+| totalsalary |
++-------------+
+|      107.00 |
++-------------+
+1 row in set (0.09 sec)
+
+Query OK, 0 rows affected (0.11 sec)
+
+2.5>.
+delimiter $$
+mysql> create procedure getEmployees1()
+    -> begin
+    -> select employee_id,employee_name,salary from employees order by salary desc;
+    -> end$$
+delimiter ;
+call getEmployees1();
+
+3>. delimiter $$
+create procedure getEmp(in empid integer)
+begin 
+select * from employees where employee_id=empid;
+end$$
+ delimiter ;
+ call getEmp(104);
+output:
++-------------+------------+-----------+--------+--------------+------------+---------+---------+----------------+------------+---------------+
+| employee_id | first_name | last_name | email  | phone_number | hire_date  | job_id  | salary  | commission_pct | manager_id | department_id |
++-------------+------------+-----------+--------+--------------+------------+---------+---------+----------------+------------+---------------+
+|         104 | Bruce      | Ernst     | BERNST | 590.423.4568 | 1991-05-21 | IT_PROG | 6000.00 |           NULL |        103 |            60 |
++-------------+------------+-----------+--------+--------------+------------+---------+---------+----------------+------------+---------------+
+1 row in set (0.10 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+ 4>.delimiter $$
+create procedure getinfo1(in dept_id integer,out dept_name varchar(20))
+begin  
+select department_name into dept_name from departments where department_id=dept_id;
+end$$
+ delimiter ;
+call getinfo1(20,@dept_name);
+select @dept_name;
+Output:
++------------+
+| @dept_name |
++------------+
+| Marketing  |
++------------+
+1 row in set (0.00 sec)
+5>mysql->delimiter $$
+mysql->create procedure cube2(inout num int)
+begin
+set num=num*num*num;
+end$$
+mysql->delimiter ;
+set @num=5;
+call cube2(@num);
+select @num;
++------+
+| @num |
++------+
+|  125 |
++------+
+1 row in set (0.00 sec)
+6>.delimiter $$
+create procedure getEmpLvl(in empid int,out emplvl varchar(20))
+begin 
+declare psalary decimal;
+select salary into psalary from employees where empid=employee_id;
+if psalary>10000 then set emplvl='L3';
+elseif psalary>=5000 and psalary<=10000 then set emplvl='L2';
+else set emplvl='L1';
+end if;
+end$$
+mysql> delimiter ;
+mysql> call getEmpLvl(102,@emplvl);
+Query OK, 1 row affected (0.23 sec)
+
+mysql> select @emplvl;
+OUTput:
++---------+
+| @emplvl |
++---------+
+| L3      |
++---------+
+1 row in set (0.00 sec)
+7>.
+delimiter $$
+create procedure getHoliday(in pemp_id int,out noofholiday int)
+begin
+declare pdept_name varchar(20);
+select distinct department_name into pdept_name from departments inner join employees where departments.department_id=(select distinct department_id from employees where pemp_id=employee_id);
+case pdept_name
+when 'Accounting' then set noofholiday=4;
+when 'Sales' then set noofholiday=2;
+else set noofholiday=3;
+end case; 
+end$$
+Query OK, 0 rows affected (0.58 sec)
+
+mysql> delimiter ;
+mysql> call getHoliday(112,@noofholiday);
+Query OK, 1 row affected (0.16 sec)
+
+mysql> select @noofholiday;
+Output:
++--------------+
+| @noofholiday |
++--------------+
+|            3 |
++--------------+
+1 row in set (0.00 sec)
